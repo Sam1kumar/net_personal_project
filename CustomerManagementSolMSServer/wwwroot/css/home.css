@@ -1,0 +1,50 @@
+﻿.home {
+    position: relative;
+    background-image: linear-gradient(to bottom, #f8deea, white);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home .login-wrapper h1, .home .signup-wrapper h1 {
+    text-align: center;
+}
+
+.login-wrapper, .signup-wrapper {
+    padding: 20px;
+    width: 47.2%;
+    height: 100%;
+    position: absolute;
+}
+
+.signup-wrapper {
+    right: 0;
+}
+
+.login-wrapper .login, .signup-wrapper .signup {
+    position: relative;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+input[type="password"], input[type="text"], input[type="email"], input[type="button"] {
+    border: 0.5px solid lightgray;
+    padding: 10px;
+    width: 80%;
+    outline: none;
+    margin: 0px 0px 10px calc(10% - 10px);
+}
+
+input[type="button"]{
+    width: 50%;
+    margin: 0px 25% 0px 25%;
+}
+
+input[type="password"]:focus, input[type="text"]:focus, input[type="email"]:focus {
+    border: 0.5px solid gray;
+}
+
+
+

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CustomerManagementSolMSServer</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/header.css" asp-append-version="true" />
+	
+</head>
+<body>
+    <header>
+		<div class="navbar">
+			<div class="menu-button">
+				<p>Menu</p><i class="fa fa-arrow-right" aria-hidden="true"></i>
+			</div>
+			<ul class="menu">
+				<li><div class="menu-item"><i class="fa fa-home" aria-hidden="true"></i><a href="#">Home</a></div></li>
+				<li class="hassubmenu">
+					<div class="menu-item"><i class="fa fa-inbox" aria-hidden="true"></i><a href="#">Posts</a></div>
+					<ul class="submenu">
+						<li><div class="menu-item"><i class="fa fa-file-text-o" aria-hidden="true"></i><a href="#">Title 1</a></div></li>
+						<li><div class="menu-item"><i class="fa fa-file-text-o" aria-hidden="true"></i><a href="#">Title 2</a></div></li>
+						<li><div class="menu-item"><i class="fa fa-file-text-o" aria-hidden="true"></i><a href="#">Title 3</a></div></li>
+						<li><div class="menu-item"><i class="fa fa-file-text-o" aria-hidden="true"></i><a href="#">Title 4</a></div></li>
+					</ul>
+				</li>
+				<li><div class="menu-item"><i class="fa fa-plus-circle" aria-hidden="true"></i><a href="#">Stories</a></div></li>
+				<li><div class="menu-item"><i class="fa fa-phone-square" aria-hidden="true"></i><a href="#">Contact</a></div></li>
+				<li><div class="menu-item"><i class="fa fa-user-o" aria-hidden="true"></i><a href="#">About</a></div></li>
+			</ul>
+		</div>
+    </header>
+	<div class="container" style="margin-left: 5rem;">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+</body>
+</html>

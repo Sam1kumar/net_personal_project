@@ -1,0 +1,40 @@
+﻿@using CustomerManagementSolMSServer.Models
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+</head>
+
+
+
+<div class="home">
+    <!--<h1 class="display-4">Welcome</h1>
+    @foreach(User data in Model)
+    {<p>@data.UserName</p>}-->
+    
+    
+    <div class="login-wrapper">
+        <h1>Login</h1>
+        <form class="login">
+            
+            <input type="text" placeholder="Username"><br />
+            <input type="password" placeholder="Password"><br />
+            <input type="button" value="Login"><br />
+        </form>
+    </div>
+
+    <div class="signup-wrapper">
+        <h1>Sign Up</h1>
+        <form class="signup">
+        
+        <input type="text" placeholder="Username"><br />
+        <input type="email" placeholder="Email"><br />
+        <input type="password" placeholder="Password"><br />
+        <input type="password" placeholder="Confirm Password"><br />
+        <input type="button" value="Sign Up"><br />
+    </form>
+    </div>
+</div>
